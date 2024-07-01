@@ -316,7 +316,7 @@ header .header > div:nth-child(2) {
   #con2 {
     width: 100vw;
     height: auto;
-    margin: 150px auto;
+    margin: 100px auto;
     padding: 0px 30px;
     box-sizing: border-box;
     opacity: 0;
