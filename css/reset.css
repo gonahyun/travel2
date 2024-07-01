@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+img {
+  display: block;
+}
+
+html {
+  /* 메인컬러 */
+  --main-color-red: #d90416;
+
+  /* 텍스트 */
+  --main-text-color: #222;
+  --text-color-white: #fff;
+  --text-color-gray: #909090;
+  --point-color-red: #ff0000;
+
+  /* 배경 */
+  --bg-color-gray: #f2f2f2;
+}
+
+body {
+  color: #222;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  word-break: keep-all;
+}
+
+/* font */
+/* font-family: "Black Han Sans", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Nunito", sans-serif; */

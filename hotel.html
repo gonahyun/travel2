@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/hotel.js"></script>
+    <link rel="stylesheet" href="css/hotel.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo.png" />
+            </a>
+          </h1>
+        </div>
+
+        <div class="search">
+          <from class="search-box" action="" method="get">
+            <span>
+              <input
+                type="text"
+                class="search-txt"
+                placeholder="검색어를 입력해주세요!"
+              />
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass" alt="검색"></i>
+              </a>
+            </span>
+          </from>
+        </div>
+
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label>즐겨찾기</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-calendar-check"></i>
+                <label>예약확인</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-phone-volume"></i>
+                <label>고객센터</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-navi">
+        <ul class="navi">
+          <li><a href="overseas.html">해외여행</a></li>
+          <li><a href="domestic.html">국내여행</a></li>
+          <li><a href="airplane.html">항공</a></li>
+          <li><a href="hotel.html">호텔</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- visual start -->
+    <div id="visual">
+      <div class="v_wrap">
+        <div class="v-txt">
+          <h2>전세계 호텔 예약을 쉽고 빠르게!</h2>
+          <p>다양한 혜택과 함께, 특별한 여행을 시작하세요.</p>
+        </div>
+
+        <div class="search">
+          <ul>
+            <li>
+              <input placeholder="어디로 떠나세요?" />
+            </li>
+            <li><input placeholder="출발지 전체" /></li>
+            <li><input placeholder="여행 시작일 선택" /></li>
+            <li>검색</li>
+          </ul>
+          <div class="check">
+            <i class="fa-regular fa-circle-check"></i> 미리 항공권을
+            구매하셨나요?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container start -->
+    <div id="container">
+      <!-- con1  -->
+      <div id="con1">
+        <div class="banner">
+          <ul>
+            <li class="banner-txt">
+              <p>#최저가보상제 #마감임박특가</p>
+              <h3>해외호텔 메가 핫딜! 단 3일!</h3>
+              <div>바로가기</div>
+            </li>
+            <li><img src="img/hotel-banner.png" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con2 -->
+      <div id="con2">
+        <h3>아직도 안가봤다고-오?🤦 한번은 가야할 호캉스 도시📌</h3>
+        <ul>
+          <li>
+            <div class="c1_txt">
+              <h4>태국</h4>
+              <p>먹거리 & 호캉스 천국!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="c1_txt">
+              <h4>홍콩&마카오</h4>
+              <p>동양과 서양의 매력 가득!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="c1_txt">
+              <h4>하와이</h4>
+              <p>리조트피 포함 & 추가금 제로!</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="c1_txt">
+              <h4>일본</h4>
+              <p>먹거리 & 놀거리 천국!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- con3 -->
+      <div id="con3">
+        <div class="c3_wrap">
+          <h2>카테고리별 추천 상품</h2>
+
+          <div class="tab">
+            <ul class="tabMenu">
+              <li><a href="#">호텔</a></li>
+              <li><a href="#">리조트</a></li>
+              <li><a href="#">모텔</a></li>
+              <li><a href="#">펜션</a></li>
+            </ul>
+
+            <ul class="tabContents">
+              <li class="tabC">
+                <ul>
+                  <li>
+                    <img src="img/hotel-con3-1-1.webp" />
+                    <div class="room_txt">
+                      <div>하와이</div>
+                      <h4>LXR호텔 & 리조트의 카 라이 와이키키비치</h4>
+                      <p>호텔 | 5성급 | <span>★</span>(9.3) 723</p>
+                      <h3>246,450원<span class="coG">265,000원</span></h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-1-2.jpg" />
+                    <div class="room_txt">
+                      <div>오사카</div>
+                      <h4>스위소텔 난카이 오사카</h4>
+                      <p>호텔 | 5성급 |<span>★</span>(9.1) 757</p>
+                      <h3>157,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-1-3.webp" />
+                    <div class="room_txt">
+                      <div>태국</div>
+                      <h4>그랜드 머큐어 푸켓 파통</h4>
+                      <p>호텔 | 5성급 | <span>★</span>(9.5) 961</p>
+                      <h3>125,300원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="tabC">
+                <ul>
+                  <li>
+                    <img src="img/hotel-con3-2-1.webp" />
+                    <div class="room_txt">
+                      <div>베트남</div>
+                      <h4>빈펄 리조트 & 스파 나트랑 베이</h4>
+                      <p>리조트 | 5성급 | <span>★</span>(9.1) 723</p>
+                      <h3>173,450원</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-2-2.webp" />
+                    <div class="room_txt">
+                      <div>필리핀</div>
+                      <h4>제이파크 아일랜드 리조트 & 워터파크</h4>
+                      <p>리조트 | <span>★</span>(9.3) 984</p>
+                      <h3>366,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-2-3.jpg" />
+                    <div class="room_txt">
+                      <div>괌</div>
+                      <h4>두짓 비치 리조트 괌</h4>
+                      <p>리조트 | 4.5성급 | <span>★</span>(9.3) 612</p>
+                      <h3>324,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="tabC">
+                <ul>
+                  <li>
+                    <img src="img/hotel-con3-3-1.jpg" />
+                    <div class="room_txt">
+                      <div>월곶</div>
+                      <h4>월곶 더휴식 이로호텔</h4>
+                      <p>모텔 | <span>★</span>(9.3) 936</p>
+                      <h3>25,000원<span class="coG">50,000원</span></h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-3-2.jpg" />
+                    <div class="room_txt">
+                      <div>이태원</div>
+                      <h4>이태원 누베르 서울</h4>
+                      <p>모텔 | <span>★</span>(9.0) 226</p>
+                      <h3>88,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-3-3.jpg" />
+                    <div class="room_txt">
+                      <div>종로</div>
+                      <h4>종로 부티크 호텔K</h4>
+                      <p>모텔 | <span>★</span>(9.3) 7,664</p>
+                      <h3>45,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="tabC">
+                <ul>
+                  <li>
+                    <img src="img/hotel-con3-4-1.jpg" />
+                    <div class="room_txt">
+                      <div>가평</div>
+                      <h4>가평 어거스트청평</h4>
+                      <p>펜션 | <span>★</span>(9.2) 68</p>
+                      <h3>165,000원</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-4-2.jpg" />
+                    <div class="room_txt">
+                      <div>영종도</div>
+                      <h4>영종도 블루오션펜션</h4>
+                      <p>펜션 | <span>★</span>(9.1) 44</p>
+                      <h3>116,400원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                  <li>
+                    <img src="img/hotel-con3-4-3.jpg" />
+                    <div class="room_txt">
+                      <div>괴산</div>
+                      <h4>괴산 사담스테이</h4>
+                      <p>풀빌라, 펜션 | <span>★</span>(9.6) 41</p>
+                      <h3>145,000원~</h3>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- con4 -->
+      <div id="con4">
+        <div class="c4_wrap">
+          <div class="c4title">
+            <h2 id="animatedTitle">
+              단 3일만! ⏰ 해외호텔 초특가 공동구매딜🔥
+            </h2>
+          </div>
+          <ul>
+            <li>
+              <img src="img/hotel-con4-1.webp" />
+              <p>[공동구매딜] ★ 5성급</p>
+              <h5>[푸꾸옥] 인터컨티넨탈 푸꾸옥 롱비치</h5>
+              <p>#공동구매딜 초특가 파격할인! #인기NO.1</p>
+              <div class="price"><strong>210,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/hotel-con4-2" />
+              <p>[공동구매딜] ★ 4성급</p>
+              <h5>[괌] 퍼시픽 아일랜드 클럽 PIC 괌</h5>
+              <p>#공동구매딜 초특가 파격할인! #실버/골드패스</p>
+
+              <div class="price"><strong>344,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/hotle-con4-3.jpg" />
+              <p>[공동구매딜] ★ 4.5성급</p>
+              <h5>[방콕] 이스틴 그랜드 호텔 파야타이</h5>
+              <p>#공동구매딜 초특가 파격할인! #인피니티풀</p>
+              <div class="price"><strong>156,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/hotel-con4-4.webp" />
+              <p>[공동구매딜] ★ 3성급</p>
+              <h5>
+                [타이베이] 소테츠 그랜드 프레사 시먼[05/31] 울진/영덕/포항/경주
+                2일 #동해안 #7번국도
+              </h5>
+              <div class="price"><strong>134,000</strong>원~</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con5 -->
+      <div id="con5">
+        <div class="c5_wrap">
+          <ul>
+            <li>
+              <h2>여행일기<br />국내숙박만의<br /><span>특별한 혜택!</span></h2>
+            </li>
+
+            <li>
+              <ul class="c5_icon">
+                <li>
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <div class="i-txt">
+                    <h4>실시간 국내항공</h4>
+                    <p>항공사별 최저가 바로 확인!</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-car"></i>
+                  <div class="i-txt">
+                    <h4>제주렌터카 최대 70% 할인</h4>
+                    <p>국내항공 구매자 10% 추가할인</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-hotel"></i>
+                  <div class="i-txt">
+                    <h4>국내숙박 3% 추가할인</h4>
+                    <p>국내항공권 구매자 대상</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer star -->
+    <footer>
+      <div id="footer">
+        <ul>
+          <li><div class="f-logo"></div></li>
+          <li>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us 02-123-4567</li>
+            </ul>
+            <p>
+              (주)여행일기 대표자 : 고나현 사업자 등록번호 : 123-45-67890 주소 :
+              서울 강서구 화곡로 149 심당빌딩 8층<br />Copyright by travel. All
+              rights reserved.
+            </p>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overseas</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/overseas.js"></script>
+    <link rel="stylesheet" href="css/overseas.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo.png" />
+            </a>
+          </h1>
+        </div>
+
+        <div class="search">
+          <from class="search-box" action="" method="get">
+            <span>
+              <input
+                type="text"
+                class="search-txt"
+                placeholder="검색어를 입력해주세요!"
+              />
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass" alt="검색"></i>
+              </a>
+            </span>
+          </from>
+        </div>
+
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label>즐겨찾기</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-calendar-check"></i>
+                <label>예약확인</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-phone-volume"></i>
+                <label>고객센터</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-navi">
+        <ul class="navi">
+          <li><a href="overseas.html">해외여행</a></li>
+          <li><a href="domestic.html">국내여행</a></li>
+          <li><a href="airplane.html">항공</a></li>
+          <li><a href="hotel.html">호텔</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- visual start -->
+    <div id="visual">
+      <div class="v_wrap">
+        <div class="v-txt">
+          <h2>전세계 여행지 검색을 쉽고 빠르게!</h2>
+          <p>원하는 여행지 어디든 예약해보세요.</p>
+        </div>
+
+        <div class="search">
+          <ul>
+            <li>
+              <input placeholder="어디로 떠나세요?" />
+            </li>
+            <li><input placeholder="출발지 전체" /></li>
+            <li><input placeholder="여행 시작일 선택" /></li>
+            <li>검색</li>
+          </ul>
+          <div class="check">
+            <i class="fa-regular fa-circle-check"></i> 미리 항공권을
+            구매하셨나요?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container start -->
+    <div id="container">
+      <!-- con1  -->
+      <div id="con1">
+        <div class="banner">
+          <ul>
+            <li class="banner-txt">
+              <p>1건 예약해도 경품 당첨</p>
+              <h3>해외호텔 24주 예약 챌린지</h3>
+              <div>바로가기</div>
+            </li>
+            <li><img src="img/overseas-banner.png" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con2 -->
+      <div id="con2">
+        <div class="c2_wrap">
+          <div class="c2title">
+            <h2 id="animatedTitle">⏰출발임박!⏰ 바로 떠나는 해외여행</h2>
+            <p>지금 당장 예약할 수 있는 상품을 소개합니다~</p>
+          </div>
+          <ul>
+            <li>
+              <img src="img/overseas-con21.jpg" />
+              <h5>다낭/호이안 4,5일 #시내 4성 호텔 #가성비 추천</h5>
+              <p>바나힐 테마파크 / 전신 마사지</p>
+              <div class="price"><strong>299,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/overseas-con22.jpg" />
+              <h5>보홀 4,5일 #라메디 리조트 #알로나비치 #여유일정</h5>
+              <p>프리미어 풀억세스룸</p>
+              <div class="price"><strong>359,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/overseas-con23.jpg" />
+              <h5>칭다오(청도)3일 #쉐라톤 #무제한 양꼬치</h5>
+              <p>5명부터 출발 확정 / NO 쇼핑</p>
+              <div class="price"><strong>189,000</strong>원~</div>
+            </li>
+            <li>
+              <img src="img/overseas-con24.jpg" />
+              <h5>코타키나발루 5일 #팔레스 리조트 #아일랜드 투어</h5>
+              <p>선셋 나이트 투어 + 시내관광</p>
+              <div class="price"><strong>430,400</strong>원~</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con3 -->
+      <div id="con3">
+        <div class="c3_wrap">
+          <ul>
+            <li class="tab">
+              <h3>떠나보자<br />테마여행!</h3>
+              <ul class="tabMenu">
+                <li><a href="#">테마파크 덕후 🎆</a></li>
+                <li><a href="#">대자연이 주는 감동 🌳</a></li>
+                <li><a href="#">동물 사랑 💞</a></li>
+                <li><a href="#">쇼핑!쇼핑!쇼핑! 🤑</a></li>
+              </ul>
+            </li>
+
+            <li class="tabContents">
+              <ul>
+                <li class="con">
+                  <ul>
+                    <li>
+                      <img src="img/overseas-con3-1-1.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          오사카 3,4일 #유니버셜 스튜디오 재팬 #오사카 시내호텔
+                        </h4>
+                        <p>해리포터와 닌텐도 월드를 만나자!</p>
+                        <strong class="price">799,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/overseas-con3-1-2.jpg" />
+                      <div class="c3Txt">
+                        <h4>도쿄 3,4일 #디지니랜드 #전용버스로 편리한 이동</h4>
+                        <p>영원한 동심의 세계 디지니랜드&디즈니씨</p>
+                        <strong class="price">659,900<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/overseas-con3-1-3.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          싱가포르 5일 #유니버셜 스튜디오 #가든스 바이 더 베이
+                        </h4>
+                        <p>20개 이상 어트랙션의 유니버셜 스튜디오</p>
+                        <strong class="price">1,716,800<span>원~</span></strong>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="con">
+                  <ul>
+                    <li>
+                      <img src="img/overseas-con3-2-1.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          장가계/원가계 4,5,6일 #천자산 자연 보호구 #천문산
+                          케이블카
+                        </h4>
+                        <p>유네스코 세계 자연유산 원가계&천자산</p>
+                        <strong class="price">379,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/overseas-con3-2-2.jpg" />
+                      <div class="c3Txt">
+                        <h4>스위스 일주 9일 #힐링 알프스 #인터라켄 #리기산</h4>
+                        <p>장엄한 알프스의 풍경과 만나는 여행</p>
+                        <strong class="price">4,479,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/index-visual1.png" />
+                      <div class="c3Txt">
+                        <h4>
+                          미서부 10일 #5대캐년 + 모뉴먼트 밸리 #요세미티
+                          국립공원
+                        </h4>
+                        <p>인생샷의 성지 앤텔롭 캐년과 호스슈 벤드</p>
+                        <strong class="price">3,499,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="con">
+                  <ul>
+                    <li>
+                      <img src="img/turtle.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          보홀 4,5일 #호핑투어 #고래상어투어<br />#돌핀 왓칭
+                          투어
+                        </h4>
+                        <p>보홀 인기 no.1헤난 타왈라 리조트</p>
+                        <strong class="price">599,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/panda.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          성도 청두 5일 #와룡 신수평 판다기지<br />
+                          #자유일정 #민박 투숙
+                        </h4>
+                        <p>매일매일 귀여운 판다 친구들 만나기</p>
+                        <strong class="price">1,149,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/elephant.jpg" />
+                      <div class="c3Txt">
+                        <h4>
+                          치앙마이 5일 #코끼리 캠프 방문<br />#미식 여행
+                          #도이인타논
+                        </h4>
+                        <p>코끼리 케어 프로그램 참여</p>
+                        <strong class="price">949,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="con">
+                  <ul>
+                    <li>
+                      <img src="img/overseas-con3-4-1.jpg" />
+                      <div class="c3Txt">
+                        <h4>도코 에어텔 3,4,5일 #도쿄 시내 호텔 숙박</h4>
+                        <p>엔저=득템! 지금은 쇼핑 타임</p>
+                        <strong class="price">469,900<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/overseas-con3-4-2.jpg" />
+                      <div class="c3Txt">
+                        <h4>괌 4,5일 #두짓타니 #오션뷰 #쇼핑 #최적의 위치</h4>
+                        <p>쇼핑몰과 맛집이 가득한 시내 중심 위치</p>
+                        <strong class="price">1,199,000<span>원~</span></strong>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/overseas-con3-4-3.jpg" />
+                      <div class="c3Txt">
+                        <h4>방콕 에어텔 5일 #신돈 미드타운 호텔 #5성급 호텔</h4>
+                        <p>칫롬역 도보 5분거리, 랑수언 로드에 위치한 호텔</p>
+                        <strong class="price">575,500<span>원~</span></strong>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con4 -->
+      <div id="con4">
+        <div class="c4_wrap">
+          <h2>미리 예약하는 특가</h2>
+          <div class="grid-container">
+            <div class="item item1">
+              <h3>[서유럽] 스위스 / 이탈리아 9~10일</h3>
+              <div class="itemHover">
+                <div class="iHWrap">
+                  <h4>서유럽 핵심2국 #스위스 완전정복</h4>
+                  <p>[서유럽 핵심] 스위스 / 이탈리아 9~10일</p>
+                  <div class="dis">
+                    <strong>3,049,000<span>원~</span></strong>
+                    <a href="#">자세히보기 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item2">
+              <h3>[하노이/하롱베이] 옌뜨(하롱5성) + 선택관광ALL포함</h3>
+              <div class="itemHover">
+                <div class="iHWrap">
+                  <h4>#선택관광 ALL포함 #센레스토랑 #하롱 5성</h4>
+                  <p>[하노이/하롱베이] 옌뜨(하롱5성) + 선택관광ALL포함</p>
+                  <div class="dis">
+                    <strong>3,049,000<span>원~</span></strong>
+                    <a href="#">자세히보기 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item3">
+              <h3>[보홀] 발리카삭호핑투어 + 돌핀왓칭 4/5일</h3>
+              <div class="itemHover">
+                <div class="iHWrap">
+                  <h4>#비그랜드호텔 #더스토리호텔숙박</h4>
+                  <p>[보홀] 발리카삭호핑투어 + 돌핀왓칭 4/5일</p>
+                  <div class="dis">
+                    <strong>336,000<span>원~</span></strong>
+                    <a href="#">자세히보기 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item4">
+              <h3>[북해도] 여름특선 숲속온천마을 4일</h3>
+              <div class="itemHover">
+                <div class="iHWrap">
+                  <h4>#후라노 #비에이 #오타루 #온천호</h4>
+                  <p>[북해도] 여름특선 숲속온천마을 4일</p>
+                  <div class="dis">
+                    <strong>1,119,000<span>원~</span></strong>
+                    <a href="#">자세히보기 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item5">
+              <h3>[방콕/파타야] ALL-NEW일정 5일</h3>
+              <div class="itemHover">
+                <div class="iHWrap">
+                  <h4>전일정5성+객실업글+미니워터파크</h4>
+                  <p>[방콕/파타야] ALL-NEW일정 5일</p>
+                  <div class="dis">
+                    <strong>869,900<span>원~</span></strong>
+                    <a href="#">자세히보기 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer star -->
+    <footer>
+      <div id="footer">
+        <ul>
+          <li><div class="f-logo"></div></li>
+          <li>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us 02-123-4567</li>
+            </ul>
+            <p>
+              (주)여행일기 대표자 : 고나현 사업자 등록번호 : 123-45-67890 주소 :
+              서울 강서구 화곡로 149 심당빌딩 8층<br />Copyright by travel. All
+              rights reserved.
+            </p>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

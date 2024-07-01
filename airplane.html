@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airplane</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/airplane.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/airplane.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo.png" />
+            </a>
+          </h1>
+        </div>
+
+        <div class="search">
+          <from class="search-box" action="" method="get">
+            <span>
+              <input
+                type="text"
+                class="search-txt"
+                placeholder="검색어를 입력해주세요!"
+              />
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass" alt="검색"></i>
+              </a>
+            </span>
+          </from>
+        </div>
+
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label>즐겨찾기</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-calendar-check"></i>
+                <label>예약확인</label>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-phone-volume"></i>
+                <label>고객센터</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-navi">
+        <ul class="navi">
+          <li><a href="overseas.html">해외여행</a></li>
+          <li><a href="domestic.html">국내여행</a></li>
+          <li><a href="airplane.html">항공</a></li>
+          <li><a href="hotel.html">호텔</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- visual start -->
+    <div id="visual">
+      <div class="v_wrap">
+        <div class="v-txt">
+          <h2>전세계 항공권 검색을 쉽고 빠르게!</h2>
+          <p>
+            전세계 200개 이상 항공사의 항공권을 실시간 가격 비교하여 예약하세요.
+          </p>
+        </div>
+
+        <div class="search">
+          <ul>
+            <li>
+              <input placeholder="어디로 떠나세요?" />
+            </li>
+            <li><input placeholder="출발지 전체" /></li>
+            <li><input placeholder="여행 시작일 선택" /></li>
+            <li>검색</li>
+          </ul>
+          <div class="check">
+            <i class="fa-regular fa-circle-check"></i> 미리 항공권을
+            구매하셨나요?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container start -->
+    <div id="container">
+      <!-- con1  -->
+      <div id="con1">
+        <div class="banner">
+          <ul>
+            <li class="banner-txt">
+              <p>카드사별 최대 10% 할인 혜택!</p>
+              <h3>대한항공 중국 항공 특가</h3>
+              <div>바로가기</div>
+            </li>
+            <li><img src="img/airplane-banner.png" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con2 -->
+      <div id="con2">
+        <div class="c2_wrap">
+          <h2>한 주간 가장 많이 조회된 항공권 BEST</h2>
+          <ul class="product_list">
+            <li class="country cont1">
+              <ul>
+                <li class="c1bg">
+                  <div class="c2_txt"><strong>일본</strong>Japan</div>
+                </li>
+                <li class="open">
+                  <ul>
+                    <li class="hoko">
+                      <ul class="num">
+                        <li>1</li>
+                        <li>
+                          <h5>후쿠오카</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-18(화) ~ 06-25(화)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>118,700</strong>원~</p>
+                    </li>
+
+                    <li class="osaka">
+                      <ul class="num">
+                        <li>2</li>
+                        <li>
+                          <h5>오사카(간사이)</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-19(화) ~ 06-27(목)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>176,700</strong>원~</p>
+                    </li>
+
+                    <li class="osaka2">
+                      <ul class="num">
+                        <li>3</li>
+                        <li>
+                          <h5>오사카</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-19(화) ~ 06-20(목)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>176,700</strong>원~</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="country cont2">
+              <ul>
+                <li class="c1bg">
+                  <div class="c2_txt"><strong>아시아</strong>Asia</div>
+                </li>
+                <li>
+                  <ul>
+                    <li class="hoko">
+                      <ul class="num">
+                        <li>1</li>
+                        <li>
+                          <h5>방콕</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-27(목) ~ 07-01(월)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>248,300</strong>원~</p>
+                    </li>
+
+                    <li class="osaka">
+                      <ul class="num">
+                        <li>2</li>
+                        <li>
+                          <h5>다낭</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-17(화) ~ 06-21(금)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>223,900</strong>원~</p>
+                    </li>
+
+                    <li class="osaka2">
+                      <ul class="num">
+                        <li>3</li>
+                        <li>
+                          <h5>발리</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-15(토) ~ 6-27(목)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>423,400</strong>원~</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="country cont3">
+              <ul>
+                <li class="c1bg">
+                  <div class="c2_txt"><strong>미주</strong>America</div>
+                </li>
+                <li>
+                  <ul>
+                    <li class="hoko">
+                      <ul class="num">
+                        <li>1</li>
+                        <li>
+                          <h5>LA</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-20(목) ~ 06-22(토)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>1,178,900</strong>원~</p>
+                    </li>
+
+                    <li class="osaka">
+                      <ul class="num">
+                        <li>2</li>
+                        <li>
+                          <h5>호놀룰루</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-21(금) ~ 06-27(목)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>1,076,000</strong>원~</p>
+                    </li>
+
+                    <li class="osaka2">
+                      <ul class="num">
+                        <li>3</li>
+                        <li>
+                          <h5>뉴욕</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-20(목) ~ 06-25(화)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>1,475,300</strong>원~</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="country cont4">
+              <ul>
+                <li class="c1bg">
+                  <div class="c2_txt"><strong>유럽</strong>Europe</div>
+                </li>
+                <li>
+                  <ul>
+                    <li class="hoko">
+                      <ul class="num">
+                        <li>1</li>
+                        <li>
+                          <h5>바르셀로나</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-16(일) ~ 06-19(수)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>882,400</strong>원~</p>
+                    </li>
+
+                    <li class="osaka">
+                      <ul class="num">
+                        <li>2</li>
+                        <li>
+                          <h5>이스탄불</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-15(토) ~ 06-19(수)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>511,700</strong>원~</p>
+                    </li>
+
+                    <li class="osaka2">
+                      <ul class="num">
+                        <li>3</li>
+                        <li>
+                          <h5>런던</h5>
+                          <p>
+                            <strong>여정구분 </strong> 직항 |
+                            <strong>출국/귀국일</strong> 06-17(월) ~ 06-25(화)
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="price"><strong>791,000</strong>원~</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con3 -->
+      <div id="con3">
+        <div class="c3_wrap">
+          <h2>제주 항공권 깜짝 특가</h2>
+          <ul>
+            <li>
+              <div class="top">
+                <img src="img/airplane-con3-1.jpg" />
+                <div>편도</div>
+              </div>
+              <div class="bottom">
+                <h3>김포 → 제주</h3>
+                <ul>
+                  <li>GMP</li>
+                  <li>CJU</li>
+                </ul>
+                <h4>5만원대~</h4>
+                <div>비교검색</div>
+              </div>
+            </li>
+
+            <li>
+              <div class="top">
+                <img src="img/airplane-con3-2.jpg" />
+                <div>편도</div>
+              </div>
+              <div class="bottom">
+                <h3>부산 → 제주</h3>
+                <ul>
+                  <li>PUS</li>
+                  <li>CJU</li>
+                </ul>
+                <h4>3만원대~</h4>
+                <div>비교검색</div>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <img src="img/airplane-con3-3.jpg" />
+                <div>편도</div>
+              </div>
+              <div class="bottom">
+                <h3>광주 → 제주</h3>
+                <ul>
+                  <li>KWJ</li>
+                  <li>CJU</li>
+                </ul>
+                <h4>2만원대~</h4>
+                <div>비교검색</div>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <img src="img/airplane-con3-4.jpg" />
+                <div>편도</div>
+              </div>
+              <div class="bottom">
+                <h3>청주 → 제주</h3>
+                <ul>
+                  <li>CJJ</li>
+                  <li>CJU</li>
+                </ul>
+                <h4>2만원대~</h4>
+                <div>비교검색</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- con4 -->
+      <div id="con4">
+        <div class="c4_wrap">
+          <h2>'5월' 항공사 프로모션 추천 특가</h2>
+          <section class="slider">
+            <button class="slider__control prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider__control next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div
+              class="slider__container"
+              data-multislide="false"
+              data-step="4"
+            >
+              <div class="slider__item">
+                <img src="img/airplane-con4-1.jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 로스앤젤레스 왕복 항공권</h4>
+                  <p>아시아나 항공 특가</p>
+                  <div><span>1,331,200</span>원~</div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img src="img/airplane-con4-2 (2).jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 몬트리올 왕복 항공권</h4>
+                  <p>에어캐나다 특가</p>
+                  <div><span>1,473,200</span>원~</div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img src="img/airplane-con4-3.jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 마카오 왕복 항공권</h4>
+                  <p>진에어 특가</p>
+                  <div><span>268,600</span>원~</div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img src="img/airplane-con4-4.jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 오사카 왕복 항공권</h4>
+                  <p>제주항공 특가</p>
+                  <div><span>228,700</span>원~</div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img src="img/airplane-con4-1.jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 뉴욕 왕복 항공권</h4>
+                  <p>아시아나 항공 특가</p>
+                  <div><span>1,233,200</span>원~</div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img src="img/airplane-con4-3.jpg" alt="" width="100%" />
+                <div class="slidertxt">
+                  <p class="coG">MD 추천 특가</p>
+                  <h4>인천 ↔ 발리 왕복 항공권</h4>
+                  <p>진에어 특가</p>
+                  <div><span>1,012,200</span>원~</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- con5 -->
+      <div id="con5">
+        <div class="c5_wrap">
+          <ul>
+            <li>
+              <h2>여행일기<br />항공만의<br /><span>특별한 서비스!</span></h2>
+            </li>
+
+            <li>
+              <ul class="c5_icon">
+                <li>
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <div class="i-txt">
+                    <h4>스케일이<br />다른경험</h4>
+                    <p>할인부터 서비스까지!</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="fa-regular fa-calendar"></i>
+                  <div class="i-txt">
+                    <h4>당일출발<br />항공권 구매</h4>
+                    <p>지금 당장 떠나세요~</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-gem"></i>
+                  <div class="i-txt">
+                    <h4>프리미엄<br />서비스</h4>
+                    <p>콜백 서비스의 선물</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-chair"></i>
+                  <div class="i-txt">
+                    <h4>사전좌석지정으로<br />원하는 좌석 찜!</h4>
+                    <p>항공좌석을 내 마음대로</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer star -->
+    <footer>
+      <div id="footer">
+        <ul>
+          <li><div class="f-logo"></div></li>
+          <li>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Contact Us 02-123-4567</li>
+            </ul>
+            <p>
+              (주)여행일기 대표자 : 고나현 사업자 등록번호 : 123-45-67890 주소 :
+              서울 강서구 화곡로 149 심당빌딩 8층<br />Copyright by travel. All
+              rights reserved.
+            </p>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
